@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209520539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca81ada54d2bef46bc032f695942865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 10
+  isRight: 0
 --- !u!114 &209520542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +180,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf2b0e6e8208334a8217ea8b10dae80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 4
+  sfxSource: {fileID: 0}
+  musicSource: {fileID: 0}
+  sfxClip: {fileID: 0}
+  musicClip1: {fileID: 0}
+  musicClip2: {fileID: 0}
 --- !u!114 &209520543
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Paddle : MonoBehaviour
     private float height;
 
     string input;
-    bool isRight;
+    public bool isRight;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,16 @@ public class Paddle : MonoBehaviour
     void Update()
     {
         float move = Input.GetAxis(input) * Time.deltaTime * speed;
+
+        // restrict paddle movement
+        if (transform.position.y < GameManager.bottomLeft.y + height/ 2 && move < 0)
+        {
+            move = 0;
+        }
+        if (transform.position.y > GameManager.topRight.y - height/ 2 && move > 0)
+        {
+            move = 0;
+        }
 
         transform.Translate(move * Vector2.up);
     }
