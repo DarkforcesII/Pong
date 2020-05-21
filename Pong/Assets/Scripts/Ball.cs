@@ -13,9 +13,9 @@ public class Ball : MonoBehaviour
     // audio
     public AudioSource sfxSource;
     public AudioSource musicSource;
-    public AudioClip sfxClip;
-    public AudioClip musicClip1;
-    public AudioClip musicClip2;
+    public AudioClip ballPitch;
+    public AudioClip introClip;
+    public AudioClip loopClip;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,8 @@ public class Ball : MonoBehaviour
         radius = transform.localScale.x / 2;
 
         // audio
-        sfxSource.clip = sfxClip;
-        musicSource.PlayOneShot(musicClip1);
+        sfxSource.clip = ballPitch;
+        musicSource.PlayOneShot(introClip);
         // Start Coroutine
         StartCoroutine(PlayLoop());
     }
@@ -33,10 +33,18 @@ public class Ball : MonoBehaviour
     IEnumerator PlayLoop()
     {
         yield return new WaitForSecondsRealtime(2.087f);
-        musicSource.clip = musicClip2;
+        musicSource.clip = loopClip;
         musicSource.loop = true;
         musicSource.Play();
 
+    }
+
+    private void ExitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     // Update is called once per frame

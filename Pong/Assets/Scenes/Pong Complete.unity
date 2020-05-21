@@ -131,8 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 209520540}
   - component: {fileID: 209520543}
-  - component: {fileID: 209520542}
-  - component: {fileID: 209520541}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -154,38 +152,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &209520541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209520539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ca81ada54d2bef46bc032f695942865, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  isRight: 0
---- !u!114 &209520542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209520539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf2b0e6e8208334a8217ea8b10dae80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  sfxSource: {fileID: 0}
-  musicSource: {fileID: 0}
-  sfxClip: {fileID: 0}
-  musicClip1: {fileID: 0}
-  musicClip2: {fileID: 0}
 --- !u!114 &209520543
 MonoBehaviour:
   m_ObjectHideFlags: 0

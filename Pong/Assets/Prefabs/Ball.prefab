@@ -138,9 +138,9 @@ MonoBehaviour:
   speed: 4
   sfxSource: {fileID: 8531872923624508326}
   musicSource: {fileID: 1691803262416486606}
-  sfxClip: {fileID: 8300000, guid: 88d79478cd44a984b8089560570f67e0, type: 3}
-  musicClip1: {fileID: 8300000, guid: 19b573924cea8174c87851fb556738c9, type: 3}
-  musicClip2: {fileID: 8300000, guid: 59d45b2ab1ca7694bb0ba9b39c1af701, type: 3}
+  ballPitch: {fileID: 8300000, guid: 88d79478cd44a984b8089560570f67e0, type: 3}
+  introClip: {fileID: 8300000, guid: 19b573924cea8174c87851fb556738c9, type: 3}
+  loopClip: {fileID: 8300000, guid: 59d45b2ab1ca7694bb0ba9b39c1af701, type: 3}
 --- !u!82 &8531872923624508326
 AudioSource:
   m_ObjectHideFlags: 0
