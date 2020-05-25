@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour
 
     IEnumerator PlayLoop()
     {
-        yield return new WaitForSecondsRealtime(2.087f);
+        yield return new WaitForSecondsRealtime(introClip.length);
         musicSource.clip = loopClip;
         musicSource.loop = true;
         musicSource.Play();
